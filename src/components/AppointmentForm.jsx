@@ -33,7 +33,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/user/doctors",
+        "https://sober-path.vercel.app/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -77,7 +77,7 @@ const AppointmentForm = () => {
       // });
       // 
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/appointment/post",
+        "https://sober-path.vercel.app/api/v1/appointment/post",
         {
           firstName,
           lastName,

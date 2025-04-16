@@ -18,7 +18,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/user/login",
+          "https://sober-path.vercel.app/api/v1/user/login",
           { email, password, confirmPassword, role: "patient" },
           {
             withCredentials: true,
